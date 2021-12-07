@@ -1,0 +1,17 @@
+<configuration>
+
+    <!--数据库配置信息-->
+    <dataSource>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://www.jiayankun.com:3306/mybatis"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </dataSource>
+
+    <!--引入映射配置文件的路径-->
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/ProductMapper.xml"/>
+    </mappers>
+
+</configuration>

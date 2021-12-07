@@ -1,0 +1,11 @@
+<mapper namespace="org.example.mapper.ProductMapper">
+
+    <select id="selectList" resultType="org.example.pojo.Product">
+        select * from product
+    </select>
+
+    <select id="selectOne" resultType="org.example.pojo.Product" parameterType="org.example.pojo.Product">
+        select * from product where id = #{id} and username = #{username}
+    </select>
+
+</mapper>

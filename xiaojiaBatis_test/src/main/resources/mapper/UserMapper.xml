@@ -1,0 +1,25 @@
+<mapper namespace="org.example.mapper.UserMapper">
+
+    <!--
+        如果采用mapper代理开发,需遵循规范
+        namespace的值要和接口的全路径保持一致
+        id的值要和方法名保持一致
+    -->
+
+    <!--
+        sql语句的唯一标识:StatementId: namespace值.id值
+    -->
+    <select id="selectList" resultType="org.example.pojo.User">
+        select * from user
+    </select>
+
+    <!--
+        User user = new User();
+        user.setId(1);
+        user.setUsername("小贾")
+    -->
+    <select id="selectOne" resultType="org.example.pojo.User" parameterType="org.example.pojo.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+</mapper>
