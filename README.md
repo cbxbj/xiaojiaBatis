@@ -71,7 +71,7 @@ public static void main(String[] args) {
 #### 依赖
 
 ```xml
-	<properties>
+    <properties>
         <!--Encoding-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -152,7 +152,7 @@ public class User {
 #### 依赖
 
 ```xml
-	<properties>
+    <properties>
         <!--Encoding-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
